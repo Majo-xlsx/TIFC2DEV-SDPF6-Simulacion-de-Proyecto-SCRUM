@@ -4,11 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inicio - Blog de Ciberseguridad</title>
+
+  <!-- Bootstrap solo para estructura -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <!-- Bootstrap 5 CDN -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+
   <header>
     <nav>
       <ul>
@@ -21,133 +23,92 @@
 
   <main>
 
-    <!-- SECCIÓN: Importancia de la ciberseguridad -->
-    <section>
-      <h1>¿Por qué es importante la ciberseguridad?</h1>
+    <!-- Importancia de la ciberseguridad -->
+    <section class="welcome">
+      <h2>¿Por qué es importante la ciberseguridad?</h2>
       <p>La ciberseguridad es fundamental en la era digital para proteger la información personal, empresarial y gubernamental contra ataques maliciosos. Desde evitar fraudes hasta proteger la privacidad, contar con buenas prácticas de seguridad informática puede prevenir pérdidas económicas, robo de identidad y daños irreparables. Educarse en este campo es más importante que nunca.</p>
     </section>
 
-    <!-- SECCIÓN: Video educativo -->
-    <section class="container my-5">
-  <h2 class="mb-4 text-center">Videos educativos sobre ciberseguridad</h2>
-  <div class="row g-4">
+    <!-- Videos educativos -->
+    <section class="articles">
+      <h2>Videos educativos sobre ciberseguridad</h2>
+      <div class="article-grid">
 
-    <div class="col-12 col-sm-6 col-md-3">
-      <div class="card h-100 video-card">
-        <iframe class="card-img-top" width="100%" height="200" src="https://www.youtube.com/embed/1CqEJk_xFqo" title="Intro a la ciberseguridad" frameborder="0" allowfullscreen></iframe>
-        <div class="card-body">
-          <h5 class="card-title">Introducción</h5>
+        <div class="article-card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/1CqEJk_xFqo" title="Intro a la ciberseguridad" frameborder="0" allowfullscreen></iframe>
+          <h3>Introducción</h3>
         </div>
+
+        <div class="article-card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/ZzxAV5jB4ng" title="Tipos de ataques" frameborder="0" allowfullscreen></iframe>
+          <h3>Tipos de ataques</h3>
+        </div>
+
+        <div class="article-card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/V4DNj1X-fpw" title="Protección en casa" frameborder="0" allowfullscreen></iframe>
+          <h3>Protección en el hogar</h3>
+        </div>
+
+        <div class="article-card">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/Fzu8ZBmeqg8" title="Carrera en ciberseguridad" frameborder="0" allowfullscreen></iframe>
+          <h3>Carrera profesional</h3>
+        </div>
+
       </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-3">
-      <div class="card h-100 video-card">
-        <iframe class="card-img-top" width="100%" height="200" src="https://www.youtube.com/embed/ZzxAV5jB4ng" title="Tipos de ataques comunes" frameborder="0" allowfullscreen></iframe>
-        <div class="card-body">
-          <h5 class="card-title">Tipos de ataques</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-3">
-      <div class="card h-100 video-card">
-        <iframe class="card-img-top" width="100%" height="200" src="https://www.youtube.com/embed/V4DNj1X-fpw" title="Ciberseguridad en casa" frameborder="0" allowfullscreen></iframe>
-        <div class="card-body">
-          <h5 class="card-title">Protección en el hogar</h5>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-3">
-      <div class="card h-100 video-card">
-        <iframe class="card-img-top" width="100%" height="200" src="https://www.youtube.com/embed/Fzu8ZBmeqg8" title="Carrera en ciberseguridad" frameborder="0" allowfullscreen></iframe>
-        <div class="card-body">
-          <h5 class="card-title">Carrera profesional</h5>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-    <!-- SECCIÓN: Tablero de enlaces con imágenes -->
-   <section class="container my-5">
-  <h2 class="mb-4 text-center">Recursos recomendados de ciberseguridad</h2>
-  <div class="row g-4">
-
-    <div class="col-12 col-sm-6 col-md-4">
-      <a href="https://www.cybersecurity360.it/" target="_blank" class="text-decoration-none">
-        <div class="card h-100">
-          <img src="img/enlace1.jpg" class="card-img-top" alt="Cybersecurity360" />
-          <div class="card-body">
-            <h5 class="card-title">Cybersecurity 360</h5>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4">
-      <a href="https://www.kaspersky.com/resource-center" target="_blank" class="text-decoration-none">
-        <div class="card h-100">
-          <img src="img/enlace2.jpg" class="card-img-top" alt="Kaspersky" />
-          <div class="card-body">
-            <h5 class="card-title">Centro de Recursos Kaspersky</h5>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4">
-      <a href="https://www.hackthebox.com/" target="_blank" class="text-decoration-none">
-        <div class="card h-100">
-          <img src="img/enlace3.jpg" class="card-img-top" alt="Hack The Box" />
-          <div class="card-body">
-            <h5 class="card-title">Hack The Box</h5>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4">
-      <a href="https://www.cybrary.it/" target="_blank" class="text-decoration-none">
-        <div class="card h-100">
-          <img src="img/enlace4.jpg" class="card-img-top" alt="Cybrary" />
-          <div class="card-body">
-            <h5 class="card-title">Cybrary</h5>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4">
-      <a href="https://owasp.org/" target="_blank" class="text-decoration-none">
-        <div class="card h-100">
-          <img src="img/enlace5.jpg" class="card-img-top" alt="OWASP" />
-          <div class="card-body">
-            <h5 class="card-title">OWASP</h5>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="col-12 col-sm-6 col-md-4">
-      <a href="https://latam.kaspersky.com/blog" target="_blank" class="text-decoration-none">
-        <div class="card h-100">
-          <img src="img/enlace6.jpg" class="card-img-top" alt="Blog Kaspersky" />
-          <div class="card-body">
-            <h5 class="card-title">Blog Kaspersky</h5>
-          </div>
-        </div>
-      </a>
-    </div>
-
-  </div>
-
     </section>
 
-    <!-- SECCIÓN: Cursos gratuitos -->
-    <section>
+    <!-- Recursos con imágenes -->
+    <section class="articles">
+      <h2>Recursos recomendados de ciberseguridad</h2>
+      <div class="article-grid">
+
+        <div class="article-card">
+          <a href="https://www.cybersecurity360.it/" target="_blank">
+            <img src="img/enlace1.jpg" alt="Cybersecurity360" style="width:100%; border-radius: 10px;">
+            <h3>Cybersecurity 360</h3>
+          </a>
+        </div>
+
+        <div class="article-card">
+          <a href="https://www.kaspersky.com/resource-center" target="_blank">
+            <img src="img/enlace2.jpg" alt="Kaspersky" style="width:100%; border-radius: 10px;">
+            <h3>Centro de Recursos Kaspersky</h3>
+          </a>
+        </div>
+
+        <div class="article-card">
+          <a href="https://www.hackthebox.com/" target="_blank">
+            <img src="img/enlace3.jpg" alt="Hack The Box" style="width:100%; border-radius: 10px;">
+            <h3>Hack The Box</h3>
+          </a>
+        </div>
+
+        <div class="article-card">
+          <a href="https://www.cybrary.it/" target="_blank">
+            <img src="img/enlace4.jpg" alt="Cybrary" style="width:100%; border-radius: 10px;">
+            <h3>Cybrary</h3>
+          </a>
+        </div>
+
+        <div class="article-card">
+          <a href="https://owasp.org/" target="_blank">
+            <img src="img/enlace5.jpg" alt="OWASP" style="width:100%; border-radius: 10px;">
+            <h3>OWASP</h3>
+          </a>
+        </div>
+
+        <div class="article-card">
+          <a href="https://latam.kaspersky.com/blog" target="_blank">
+            <img src="img/enlace6.jpg" alt="Blog Kaspersky" style="width:100%; border-radius: 10px;">
+            <h3>Blog Kaspersky</h3>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Cursos gratuitos -->
+    <section class="welcome">
       <h2>Cursos gratuitos recomendados</h2>
       <ul>
         <li><a href="https://www.cybrary.it/" target="_blank">Cybrary: Cursos de Ciberseguridad</a></li>
@@ -157,24 +118,28 @@
       </ul>
     </section>
 
-    <!-- SECCIÓN: Artículos destacados -->
-    <section>
+    <!-- Artículos destacados -->
+    <section class="articles">
       <h2>Artículos destacados</h2>
-      <article>
-        <h3>¿Qué es el phishing y cómo evitarlo?</h3>
-        <p>Descubre cómo los delincuentes engañan a los usuarios y qué medidas puedes tomar para protegerte.</p>
-        <a href="#">Leer más</a>
-      </article>
+      <div class="article-grid">
 
-      <article>
-        <h3>10 consejos para mantener segura tu información personal</h3>
-        <p>Buenas prácticas que deberías aplicar todos los días para evitar robos de identidad o fraudes.</p>
-        <a href="#">Leer más</a>
-      </article>
+        <div class="article-card">
+          <h3>¿Qué es el phishing y cómo evitarlo?</h3>
+          <p>Descubre cómo los delincuentes engañan a los usuarios y qué medidas puedes tomar para protegerte.</p>
+          <a href="#">Leer más</a>
+        </div>
+
+        <div class="article-card">
+          <h3>10 consejos para mantener segura tu información personal</h3>
+          <p>Buenas prácticas que deberías aplicar todos los días para evitar robos de identidad o fraudes.</p>
+          <a href="#">Leer más</a>
+        </div>
+
+      </div>
     </section>
 
-    <!-- SECCIÓN: Recursos útiles -->
-    <aside>
+    <!-- Recursos útiles -->
+    <aside class="welcome">
       <h2>Recursos útiles</h2>
       <ul>
         <li><a href="https://haveibeenpwned.com/" target="_blank">¿Tu correo fue hackeado?</a></li>
@@ -190,5 +155,6 @@
     <p>Correo: fake@mail.com</p>
     <p>Proyecto: Blog Educativo de Ciberseguridad</p>
   </footer>
+
 </body>
 </html>

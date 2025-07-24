@@ -282,3 +282,7 @@ button#enviar:hover {
     width: 100%;
   }
 }
+main {
+  background-color: var(--color-bg);
+  color: var(--color-white);
+}
