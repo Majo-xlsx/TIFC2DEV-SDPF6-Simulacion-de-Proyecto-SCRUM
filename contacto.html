@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Contacto - Cibersecure</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    .contenedor {
+      width: 90%;
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid hwb(0 100% 0%);
+      border-radius: 10px;
+      background-color: #ffffff;
+    }
+
+    label, input, textarea, button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    input, textarea {
+      padding: 8px;
+    }
+
+    button {
+      padding: 10px;
+    }
+
+    h1, h2, p {
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <nav>
       <ul>
@@ -16,9 +45,10 @@
     </nav>
   </header>
 
-  <main>
-    <h1>Contacto</h1>
-    <p>Si tienes dudas, comentarios o sugerencias, no dudes en escribirnos. Estaremos encantados de leerte.</p>
+  <main class="contenedor">
+    <h1>Contáctanos</h1>
+
+    <p>Somos un grupo dedicado a la ciberseguridad. Puedes comunicarte con nosotros:</p>
 
     <ul>
       <li><strong>Email general:</strong> contacto@mail.com</li>
@@ -26,7 +56,20 @@
       <li><strong>Teléfono:</strong> +57 300 000 0000</li>
     </ul>
 
-    <p>También puedes seguirnos en nuestras redes sociales o dejarnos tus comentarios a través del formulario (próximamente).</p>
+    <h2>Formulario de Contacto</h2>
+
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+
+      <label for="correo">Correo:</label>
+      <input type="email" id="correo" name="correo">
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+      <button id="enviar" type="submit">Enviar</button>
+    </form>
   </main>
 
   <footer>
@@ -34,5 +77,6 @@
     <p>Correo: fake@mail.com</p>
     <p>Proyecto: Cibersecure</p>
   </footer>
+
 </body>
 </html>
