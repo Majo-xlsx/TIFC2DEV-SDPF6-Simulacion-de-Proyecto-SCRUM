@@ -1,0 +1,147 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f1117;
+  color: #e4e4e4;
+  line-height: 1.6;
+}
+
+a {
+  color: #00ffc8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #18f5ff;
+}
+
+/* Header y navegación */
+header {
+  background-color: #1a1d25;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav a {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Hero principal */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #0f1117, #1a1d25);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  color: #00ffc8;
+  margin-bottom: 1rem;
+}
+
+.hero button {
+  padding: 0.75rem 2rem;
+  background-color: #00ffc8;
+  border: none;
+  color: #0f1117;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+}
+
+/* Sección de bienvenida */
+.welcome {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.stat {
+  background-color: #1f232d;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 1rem;
+  min-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.stat:hover {
+  transform: translateY(-5px);
+}
+
+/* Artículos */
+.articles {
+  padding: 3rem 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.article {
+  background-color: #1a1d25;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.article:hover {
+  background-color: #00ffc81a;
+  transform: translateY(-5px);
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: #161a22;
+}
+
+.cta button {
+  background-color: #00ffc8;
+  padding: 0.75rem 2rem;
+  border: none;
+  font-weight: bold;
+  color: #0f1117;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta button:hover {
+  background-color: #18f5ff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #0d0f14;
+  font-size: 0.9rem;
+}
